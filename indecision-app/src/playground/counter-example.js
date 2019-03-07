@@ -6,12 +6,12 @@ class Counter extends React.Component {
         this.handleReset = this.handleReset.bind(this);
 
         this.state = {
-            count: 0
+            count: props.count
         };
     }
     handleAddOne() {
         // we use this.setState() to make changes/update our state
-        // and it is preferred to pass a function to it in order to 
+        // and it is preferred to pass a function to it in order to
         // return the new state
         this.setState((prevState) => {
             return {
@@ -44,6 +44,10 @@ class Counter extends React.Component {
         );
     }
 }
+
+Counter.defaultProps = {
+    count: 0
+};
 
 ReactDOM.render(<Counter />, document.getElementById('app'));
 
