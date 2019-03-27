@@ -1,7 +1,7 @@
 {
-  "name": "expensify-app",
+  "name": "portfolio-site",
   "version": "1.0.0",
-  "description": "Mark down your expenses.",
+  "description": "A materialized portfolio site",
   "author": "Apostolos Gouvalas",
   "license": "MIT",
   "main": "index.js",
